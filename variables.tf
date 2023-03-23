@@ -29,7 +29,7 @@ variable "db_username" {
 
 variable "instance_size" {
   type    = string
-  default = "db.t2.micro"
+  default = "db.t3.micro"
 
   validation {
     condition     = contains(["db.t2.micro", "db.t3.micro"], var.instance_size)
